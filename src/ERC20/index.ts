@@ -1,2 +1,2 @@
 export * from "./IERC20";
-export * from "./meta";
+export * from "./Meta";
