@@ -1,0 +1,18 @@
+#import * into Ethers from "wrapscan.io/polywrap/ethers@1.0"
+
+type Module {
+  tokenMeta(address: String!): TokenMeta!
+  totalSupply(address: String!): BigInt
+  balanceOf(address: String!, owner: String!): BigInt!
+  transfer(address: String!, to: String!, value: BigInt!): Ethers_TxResponse!
+  transferFrom(address: String!, from: String!, to: String!, value: BigInt!): Ethers_TxResponse!
+  approve(address: String!, spender: String!, value: BigInt!): Ethers_TxResponse!
+  allowance(address: String!, owner: String!, spender: String!): BigInt!
+}
+
+type TokenMeta {
+  address: String!
+  name: String!
+  symbol: String!
+  decimals: Int!
+}
