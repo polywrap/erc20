@@ -1,6 +1,6 @@
 format: 0.5.0
 project:
-  name: covalent
+  name: erc20
   type: wasm/assemblyscript
 source:
   schema: ./polywrap.graphql
